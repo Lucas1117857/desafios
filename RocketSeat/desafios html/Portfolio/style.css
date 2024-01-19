@@ -1,0 +1,325 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #00ff00;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.main {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background: var(--body-bg-color);
+
+  color: var(--text-color);
+
+  display: grid;
+  grid-template-columns: 348px 1fr;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Profile, .social-links, .Tech, .experiencies, .js, .education, .Myprojects, .projects, .twoprojects, .recent-post, .post {
+  background: var(--bg-cards);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Profile {
+  width: 348px;
+  height: 292px;
+
+  margin: 40px auto 0 40px;
+
+}
+
+.Profile img {
+  width: 128px;
+  height: 128px;
+  align-items: center;
+  justify-content: center;
+  margin: 32px auto 30px 110px;
+}
+
+h2#name {
+  gap: 30px auto;
+  font-size: 23px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.Profile p {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.social-links {
+
+  width: 348px;
+  height: 348px;
+  line-height: 43px;
+
+  margin: 0px auto 0 40px;
+  padding-left: 40px;
+  align-items: center;
+  padding-top: 20px;
+
+}
+
+.social-links a {
+  color: var(--text-color);
+  
+  font-size: 13px;
+  font-weight: 400;
+  gap: 20px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: justify;
+}
+
+.Tech {
+  width: 348px;
+  height: 208px;
+  
+  margin-left: 40px;
+}
+
+.Tech h3 {
+  font-weight: 700;
+  font-size: 20px;
+
+  margin: 30px 0 auto 20px;
+}
+
+.technology {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 0 10px;
+  margin-top: 20px
+
+}
+
+.js {
+  background: var(--bg-techs);
+  padding: 6px 12px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.experiencies {
+  width: 348px;
+  height: 352px;
+
+  margin-left: 40px;
+}
+
+.experiencies h3 {
+  margin: 30px 0 auto 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.experiencies ul li {
+  margin: 20px 0 auto 40px;
+}
+
+.education {
+  width: 348px;
+  height: 359px;
+  margin-left: 40px;
+}
+
+.education h3 {
+  margin: 30px 0 auto 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.education ul li {
+  font-size: 14px;
+  margin: 20px auto 0 75px;
+}
+
+.container {
+
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Myprojects {
+  width: 952px;
+  height: 86px;
+  margin: 40px 40px 0 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Myprojects h3 {
+  font-size: 20px;
+  font-weight: 700;
+
+  display: flex;
+  text-align: center;
+  margin: 0 30px 30px;
+  padding-top: 30px;
+}
+
+
+.Myprojects a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-right: 20px;
+}
+
+.main-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.projects {
+  width: 461px;
+  height: 186px;
+  gap: 16px;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 31px 0 auto 60px;
+
+}
+
+.projects h3 {
+  margin: 22px 0 auto 30px;
+}
+
+.descricao {
+  padding-top: 22px;
+  margin-left: 30px;
+  padding-bottom: 28px;
+}
+
+.icons {
+  margin-left: 30px;
+  display: flex;
+  gap: 8px;
+}
+
+.icons p:nth-child(4) {
+  padding-right: 217px;
+}
+
+.twoprojects {
+  width: 461px;
+  height: 186px;
+  gap: 16px;
+
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+}
+
+.twoprojects h3 {
+  margin: 22px 0 auto 30px;
+
+}
+
+.twodescricao {
+  padding-top: 22px;
+  margin-left: 30px;
+  padding-bottom: 28px;
+}
+
+.twoicons {
+  margin-left: 30px;
+  display: flex;
+  gap: 8px;
+}
+
+.twoicons p:nth-child(4) {
+  padding-right: 217px;
+}
+
+.recent-post {
+  width: 952px;
+  height: 86px;
+  margin: 30px 0 auto 60px;
+}
+
+h3#recent-post {
+  font-weight: 700;
+
+  padding: 30px 0 0 30px;
+}
+
+.post {
+  width: 952px;
+  height: 201px;
+
+  display: flex;
+  margin: 30px auto 0 60px;
+}
+
+.post img{
+  width: 128px;
+  height: 128px;
+
+  margin: 31px 0 42px 30px;
+}
+
+.text-wrapper{
+  margin-left: 20px;
+}
+
+.text-wrapper h2{
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.text-wrapper p:nth-of-type(1){
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text-wrapper p:nth-of-type(2){
+  margin-top: 28px;
+  font-size: 16px;
+}
+
+.hashtag{
+  margin-top: 11px;
+}
+
+.hashtag span{
+  font-size: 14px;
+}
+
+.hashtag span:not(:first-child){
+  margin-left: 1px;
+}
