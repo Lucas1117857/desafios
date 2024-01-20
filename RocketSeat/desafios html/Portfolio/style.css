@@ -292,22 +292,22 @@ h3#recent-post {
   margin: 31px 0 42px 30px;
 }
 
-.text-wrapper{
+.main-text {
   margin-left: 20px;
 }
 
-.text-wrapper h2{
+.main-text h2{
   margin-top: 30px;
   font-size: 18px;
   font-weight: 700;
 }
 
-.text-wrapper p:nth-of-type(1){
+.main-text p:nth-of-type(1){
   font-size: 14px;
   font-weight: 400;
 }
 
-.text-wrapper p:nth-of-type(2){
+.main-text p:nth-of-type(2){
   margin-top: 28px;
   font-size: 16px;
 }
